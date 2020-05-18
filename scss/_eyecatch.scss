@@ -1,0 +1,17 @@
+.eyecatch{
+  &__backgroung-img{
+    position: relative;
+    width: 100%;
+    height: 38.19vw;
+    background-image:url(../img/eyecatch.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__card-position{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+  }
+}

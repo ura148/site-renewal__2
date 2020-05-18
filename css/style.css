@@ -3,6 +3,13 @@ html {
   font-size: 62.5%;
   /*16px×62.5％＝10px*/ }
 
+.right {
+  margin: 0 0 0 auto; }
+
+.container {
+  box-sizing: border-box;
+  max-width: 1080px; }
+
 .text, .text__sentence {
   font-family: 'Noto Sans','Noto Sans JP', sans-serif;
   font-size: 1.6rem;
@@ -11,16 +18,47 @@ html {
   text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
+  line-height: 1.5;
   letter-spacing: 0.068em; }
-  .text__sentence--white {
-    color: #fbfdff; }
+  .text__sentence {
+    margin-bottom: 16px; }
+    .text__sentence--white {
+      color: #fbfdff; }
 
-.title, .title--sub {
+.eyecatch__backgroung-img {
+  position: relative;
+  width: 100%;
+  height: 38.19vw;
+  background-image: url(../img/eyecatch.jpg);
+  background-size: cover;
+  background-position: center; }
+.eyecatch__card-position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%); }
+
+.title, .title__center, .title--sub {
   font-family: 'Noto Serif','Noto Serif JP', serif;
   font-size: 4.2rem;
-  letter-spacing: 0.03em; }
+  color: #2f2725;
+  letter-spacing: 0.03em;
+  margin-bottom: 67px; }
+  .title__center {
+    text-align: center; }
   .title--sub {
     font-size: 2.6rem;
     letter-spacing: 0.03em; }
+
+.card__lg {
+  opacity: 0.83; }
+
+.card {
+  box-sizing: border-box;
+  background-color: #fbfdff;
+  box-shadow: 0 3px 6px 2px rgba(0, 0, 0, 0.32); }
+  .card__lg {
+    width: 520px;
+    padding: 68px; }
 
 /*# sourceMappingURL=style.css.map */

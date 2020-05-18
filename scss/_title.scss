@@ -1,7 +1,14 @@
 .title{
   font-family: 'Noto Serif','Noto Serif JP', serif;
   font-size: 4.2rem;
+  color: $color__black;
   letter-spacing: 0.03em;
+  margin-bottom: 67px;
+
+  &__center{
+    @extend .title;
+    text-align: center;
+  }
 
   &--sub{
     @extend .title;
