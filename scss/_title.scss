@@ -1,0 +1,11 @@
+.title{
+  font-family: 'Noto Serif','Noto Serif JP', serif;
+  font-size: 4.2rem;
+  letter-spacing: 0.03em;
+
+  &--sub{
+    @extend .title;
+    font-size: 2.6rem;
+    letter-spacing: 0.03em;
+  }
+}
