@@ -1,3 +1,18 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+  /*16px×62.5％＝10px*/ }
 
+.text, .text__sentence {
+  font-family: 'Noto Sans','Noto Sans JP', sans-serif;
+  font-size: 1.6rem;
+  color: #2f2725;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+  letter-spacing: 0.068em; }
+  .text__sentence--white {
+    color: #fbfdff; }
 
 /*# sourceMappingURL=style.css.map */
