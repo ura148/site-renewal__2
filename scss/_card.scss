@@ -2,16 +2,18 @@
   opacity: 0.83;
 }
 
+%bace{
+  box-sizing: border-box;
+  background-color: $color__white;
+}
+
 %shadow{
   box-shadow: 0 3px 6px 2px rgba(0,0,0,0.32);
 }
 
 .card{
-  box-sizing: border-box;
-  background-color: $color__white;
-
   &__video{
-    @extend .card;
+    @extend %bace;
     width: 512px;
     height: 288px;
     @extend %shadow;
@@ -19,7 +21,7 @@
 
   // size
   %__sm{
-    @extend .card;
+    @extend %bace;
     width: 318px;
     padding: 32px;
     @extend %shadow;
@@ -34,7 +36,7 @@
     }
   }
   &__md{
-    @extend .card;
+    @extend %bace;
     width: 496px;
     padding: 42px;
     @extend %shadow;
@@ -44,5 +46,21 @@
     width: 520px;
     padding:68px;
     @extend %shadow;
+  }
+
+  %__xl{
+    @extend %bace;
+    width: 540px;
+    padding: 52PX;
+    @extend %shadow;
+  }
+
+  &__xl{
+    @extend %__xl;
+
+    &--center{
+      @extend %__xl;
+      text-align: center;
+    }
   }
 }

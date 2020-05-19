@@ -17,4 +17,11 @@
       color: $color__white;
     }
   }
+
+  &__lg{
+    @extend .text;
+    font-size: 2.6rem;
+    font-family: 'Noto Serif','Noto Serif JP', serif;
+  }
+
 }

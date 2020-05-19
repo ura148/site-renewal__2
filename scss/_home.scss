@@ -65,4 +65,26 @@
   &__service-sentence{
     margin-bottom: 26px;
   }
+
+  // reserch temple
+  &__reserch-temple-background-img-1{
+    position:relative;
+    left: -18px;
+    width: 782px;
+    height: 483px;
+    background-image: url(../img/temple.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__reserch-temple-card{
+    position: absolute;
+    top: 184px;
+    left: 504px;
+    margin:0 0 0 auto;
+  }
+
+  &__reserch-temple-sentence{
+    margin-bottom: 42px;
+  }
 }
