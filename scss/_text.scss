@@ -9,6 +9,10 @@
   line-height: 1.5;
 	letter-spacing: 0.068em;
 
+  &__margin-bottom{
+    margin-bottom: 16px;
+  }
+
   &__sentence{
     @extend .text;
 

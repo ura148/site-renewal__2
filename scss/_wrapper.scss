@@ -7,4 +7,9 @@
     @extend .wrapper;
     background-color: $color_gray;
   }
+
+  &--blue{
+    @extend .wrapper;
+    background-color: $color__main;
+  }
 }
