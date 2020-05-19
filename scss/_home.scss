@@ -81,10 +81,26 @@
     position: absolute;
     top: 184px;
     left: 504px;
-    margin:0 0 0 auto;
   }
 
   &__reserch-temple-sentence{
     margin-bottom: 42px;
+  }
+
+  &__make-grave-background-img-1{
+    position:relative;
+    right: -18px;
+    margin: 0 0 0 auto;
+    width: 782px;
+    height: 483px;
+    background-image: url(../img/temple.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__make-grave-card{
+    position: absolute;
+    top: 184px;
+    right: 504px;
   }
 }
