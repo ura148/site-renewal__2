@@ -10,16 +10,24 @@
   %__flex{
     @extend .container;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   &__flex{
     @extend %__flex;
+    justify-content: space-between;
+
+    &--center{
+      @extend %__flex;
+      justify-content: center;
+
+    }
 
     &--reverse{
       @extend %__flex;
       flex-direction: row-reverse;
+      justify-content: space-between;
     }
   }
 

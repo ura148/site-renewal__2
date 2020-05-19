@@ -4,6 +4,7 @@
   background-color: $color__somen;
 
   &--gray{
-
+    @extend .wrapper;
+    background-color: $color_gray;
   }
 }

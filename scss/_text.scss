@@ -11,9 +11,9 @@
 
   &__sentence{
     @extend .text;
-    margin-bottom: 16px;
 
     &--white{
+      @extend .text;
       color: $color__white;
     }
   }

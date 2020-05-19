@@ -2,26 +2,47 @@
   opacity: 0.83;
 }
 
+%shadow{
+  box-shadow: 0 3px 6px 2px rgba(0,0,0,0.32);
+}
+
 .card{
   box-sizing: border-box;
   background-color: $color__white;
-  box-shadow: 0 3px 6px 2px rgba(0,0,0,0.32);
 
   &__video{
     @extend .card;
     width: 512px;
     height: 288px;
+    @extend %shadow;
   }
 
-  // font-size
+  // size
+  %__sm{
+    @extend .card;
+    width: 318px;
+    padding: 32px;
+    @extend %shadow;
+  }
+
+  &__sm{
+    @extend %__sm;
+
+    &--center{
+      @extend %__sm;
+      text-align: center;
+    }
+  }
   &__md{
     @extend .card;
     width: 496px;
     padding: 42px;
+    @extend %shadow;
   }
   &__lg{
     @extend %translucent;
     width: 520px;
     padding:68px;
+    @extend %shadow;
   }
 }
