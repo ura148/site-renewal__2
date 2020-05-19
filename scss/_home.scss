@@ -1,0 +1,44 @@
+.home{
+  &__backgroung-img{
+    position: relative;
+    width: 100%;
+    height: 38.19vw;
+    background-image:url(../img/eyecatch.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__card-position{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+  }
+
+  %__reason-texture{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+  }
+
+  &__reason-container:not(:last-child){
+    margin-bottom: 160px;
+  }
+
+  &__reason-texture{
+    @extend %__reason-texture;
+
+    &--right{
+      @extend %__reason-texture;
+      left: 40%;
+    }
+
+    &--left{
+      @extend %__reason-texture;
+      right: 40%;
+    }
+  }
+}

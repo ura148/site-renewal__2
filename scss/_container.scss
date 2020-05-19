@@ -1,4 +1,28 @@
 .container{
   box-sizing: border-box;
+  margin: 0 auto;
   max-width: 1080px;
+
+  &--bace{
+    position: relative;
   }
+
+  %__flex{
+    @extend .container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__flex{
+    @extend %__flex;
+
+    &--reverse{
+      @extend %__flex;
+      flex-direction: row-reverse;
+    }
+  }
+
+
+
+}

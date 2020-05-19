@@ -7,7 +7,18 @@
   background-color: $color__white;
   box-shadow: 0 3px 6px 2px rgba(0,0,0,0.32);
 
+  &__video{
+    @extend .card;
+    width: 512px;
+    height: 288px;
+  }
+
   // font-size
+  &__md{
+    @extend .card;
+    width: 496px;
+    padding: 42px;
+  }
   &__lg{
     @extend %translucent;
     width: 520px;

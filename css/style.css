@@ -3,12 +3,29 @@ html {
   font-size: 62.5%;
   /*16px×62.5％＝10px*/ }
 
+img {
+  width: 100%; }
+
 .right {
   margin: 0 0 0 auto; }
 
-.container {
+.wrapper {
+  padding: 180px 18px;
+  overflow: hidden;
+  background-color: #fffdf6; }
+
+.container, .container .container__flex, .container .container__flex--reverse {
   box-sizing: border-box;
+  margin: 0 auto;
   max-width: 1080px; }
+  .container--bace {
+    position: relative; }
+  .container .container__flex, .container .container__flex--reverse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .container__flex--reverse {
+    flex-direction: row-reverse; }
 
 .text, .text__sentence {
   font-family: 'Noto Sans','Noto Sans JP', sans-serif;
@@ -25,22 +42,36 @@ html {
     .text__sentence--white {
       color: #fbfdff; }
 
-.eyecatch__backgroung-img {
+.home__backgroung-img {
   position: relative;
   width: 100%;
   height: 38.19vw;
   background-image: url(../img/eyecatch.jpg);
   background-size: cover;
   background-position: center; }
-.eyecatch__card-position {
+.home__card-position {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateY(-50%); }
+.home .home__reason-texture, .home .home__reason-texture--right, .home .home__reason-texture--left {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 150px;
+  overflow: hidden; }
+.home__reason-container:not(:last-child) {
+  margin-bottom: 160px; }
+.home__reason-texture--right {
+  left: 40%; }
+.home__reason-texture--left {
+  right: 40%; }
 
 .title, .title__center, .title--sub {
   font-family: 'Noto Serif','Noto Serif JP', serif;
   font-size: 4.2rem;
+  font-weight: bold;
   color: #2f2725;
   letter-spacing: 0.03em;
   margin-bottom: 67px; }
@@ -48,15 +79,22 @@ html {
     text-align: center; }
   .title--sub {
     font-size: 2.6rem;
-    letter-spacing: 0.03em; }
+    letter-spacing: 0.03em;
+    margin-bottom: 42px; }
 
 .card__lg {
   opacity: 0.83; }
 
-.card {
+.card, .card__video, .card__md {
   box-sizing: border-box;
   background-color: #fbfdff;
   box-shadow: 0 3px 6px 2px rgba(0, 0, 0, 0.32); }
+  .card__video {
+    width: 512px;
+    height: 288px; }
+  .card__md {
+    width: 496px;
+    padding: 42px; }
   .card__lg {
     width: 520px;
     padding: 68px; }
