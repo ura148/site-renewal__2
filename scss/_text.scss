@@ -22,10 +22,17 @@
     }
   }
 
-  &__lg{
+  &--sm{
+    @extend .text;
+    font-size: 1.4rem;
+  }
+
+  &--lg{
     @extend .text;
     font-size: 2.6rem;
     font-family: 'Noto Serif','Noto Serif JP', serif;
   }
+
+
 
 }

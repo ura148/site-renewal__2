@@ -1,0 +1,36 @@
+.footer{
+  &__wrapper{
+    padding-bottom: 0;
+  }
+  &__container{
+    align-items: stretch;
+    margin-bottom: 160px;
+  }
+  &__logo{
+    display: block;
+    margin: 0 auto 32px;
+  }
+
+  &__list{
+    height: 40px
+  }
+
+  &__item{
+    line-height: 40px;
+    display: block;
+  }
+
+  &__copylights{
+    margin-left: calc( (-100vw + 1080px) / 2 );
+    margin-right: calc( (-100vw + 1080px) / 2 );
+    margin-top: 160px;
+    padding: 0;
+    height: 28px;
+    text-align: center;
+  }
+
+  &__small{
+    line-height: 28px;
+    color: $color__white;
+  }
+}

@@ -25,7 +25,6 @@ img {
     text-align: center; }
   .container .container__flex, .container .container__flex--center, .container .container__flex--reverse {
     display: flex;
-    align-items: center;
     flex-wrap: wrap; }
   .container__flex {
     justify-content: space-between; }
@@ -35,7 +34,7 @@ img {
       flex-direction: row-reverse;
       justify-content: space-between; }
 
-.text, .text__sentence, .text__sentence--white, .text__lg {
+.text, .text__sentence, .text__sentence--white, .text--sm, .text--lg {
   font-family: 'Noto Sans','Noto Sans JP', sans-serif;
   font-size: 1.6rem;
   color: #2f2725;
@@ -49,12 +48,16 @@ img {
     margin-bottom: 16px; }
   .text__sentence--white {
     color: #fbfdff; }
-  .text__lg {
+  .text--sm {
+    font-size: 1.4rem; }
+  .text--lg {
     font-size: 2.6rem;
     font-family: 'Noto Serif','Noto Serif JP', serif; }
 
 .icon {
   width: 68px; }
+  .icon--logo {
+    width: 160px; }
 
 .btn, .btn--big {
   padding: 3px 0;
@@ -178,5 +181,29 @@ img {
   padding: 52PX; }
 .card__xl--center {
   text-align: center; }
+
+.footer__wrapper {
+  padding-bottom: 0; }
+.footer__container {
+  align-items: stretch;
+  margin-bottom: 160px; }
+.footer__logo {
+  display: block;
+  margin: 0 auto 32px; }
+.footer__list {
+  height: 40px; }
+.footer__item {
+  line-height: 40px;
+  display: block; }
+.footer__copylights {
+  margin-left: calc( (-100vw + 1080px) / 2 );
+  margin-right: calc( (-100vw + 1080px) / 2 );
+  margin-top: 160px;
+  padding: 0;
+  height: 28px;
+  text-align: center; }
+.footer__small {
+  line-height: 28px;
+  color: #fbfdff; }
 
 /*# sourceMappingURL=style.css.map */
