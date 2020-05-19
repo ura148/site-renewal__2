@@ -42,6 +42,7 @@
     @extend %shadow;
   }
   &__lg{
+    @extend %bace;
     @extend %translucent;
     width: 520px;
     padding:68px;

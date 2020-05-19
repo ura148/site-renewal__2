@@ -152,7 +152,7 @@ img {
 .card__lg {
   opacity: 0.83; }
 
-.card__video, .card .card__sm, .card .card__sm--center, .card__md, .card .card__xl, .card .card__xl--center {
+.card__video, .card .card__sm, .card .card__sm--center, .card__md, .card__lg, .card .card__xl, .card .card__xl--center {
   box-sizing: border-box;
   background-color: #fbfdff; }
 
