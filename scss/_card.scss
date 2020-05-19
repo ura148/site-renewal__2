@@ -12,7 +12,7 @@
 }
 
 .card{
-  &__video{
+  &--video{
     @extend %bace;
     width: 512px;
     height: 288px;
@@ -20,28 +20,28 @@
   }
 
   // size
-  %__sm{
+  %--sm{
     @extend %bace;
     width: 318px;
     padding: 32px;
     @extend %shadow;
   }
 
-  &__sm{
-    @extend %__sm;
+  &--sm{
+    @extend %--sm;
 
     &--center{
-      @extend %__sm;
+      @extend %--sm;
       text-align: center;
     }
   }
-  &__md{
+  &--md{
     @extend %bace;
     width: 496px;
     padding: 42px;
     @extend %shadow;
   }
-  &__lg{
+  &--lg{
     @extend %bace;
     @extend %translucent;
     width: 520px;
@@ -49,18 +49,18 @@
     @extend %shadow;
   }
 
-  %__xl{
+  %--xl{
     @extend %bace;
     width: 540px;
     padding: 52PX;
     @extend %shadow;
   }
 
-  &__xl{
-    @extend %__xl;
+  &--xl{
+    @extend %--xl;
 
     &--center{
-      @extend %__xl;
+      @extend %--xl;
       text-align: center;
     }
   }
