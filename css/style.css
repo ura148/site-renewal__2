@@ -92,6 +92,8 @@ img {
   overflow: hidden; }
 .home__reason-container:not(:last-child) {
   margin-bottom: 160px; }
+.home__reason-container-flex {
+  align-items: center; }
 .home__reason-texture--right {
   left: 40%; }
 .home__reason-texture--left {

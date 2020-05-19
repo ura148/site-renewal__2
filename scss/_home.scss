@@ -28,6 +28,10 @@
     margin-bottom: 160px;
   }
 
+  &__reason-container-flex{
+    align-items: center;
+  }
+
   &__reason-texture{
     @extend %__reason-texture;
 
