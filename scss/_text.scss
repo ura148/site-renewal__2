@@ -38,7 +38,10 @@
   &--bold{
     font-weight: bold;
   }
+}
 
-
-
+@include mq(md){
+  .text{
+    
+  }
 }

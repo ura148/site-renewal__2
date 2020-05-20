@@ -109,3 +109,17 @@
     right: 504px;
   }
 }
+
+@include mq(md){
+  .home{
+    &__backgroung-img{
+      height: calc(100vh - 48px);
+    }
+
+    &__card-position{
+      top: calc((100vh - 48px) / 2);
+      left: 0;
+      transform: translateY(-50%);
+    }
+  }
+}

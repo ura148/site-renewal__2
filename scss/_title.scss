@@ -23,3 +23,10 @@
     margin-bottom: 42px;
   }
 }
+
+@include mq(md){
+  .title{
+    font-size: 3.2rem;
+    margin-bottom: 52px;
+  }
+}
