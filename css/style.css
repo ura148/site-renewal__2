@@ -53,6 +53,8 @@ img {
   .text--lg {
     font-size: 2.6rem;
     font-family: 'Noto Serif','Noto Serif JP', serif; }
+  .text--bold {
+    font-weight: bold; }
 
 .icon {
   width: 68px; }
@@ -137,6 +139,49 @@ img {
   position: absolute;
   top: 184px;
   right: 504px; }
+
+.nav {
+  display: flex;
+  justify-content: flex-end; }
+  .nav .nav__item {
+    height: 56px; }
+  .nav__item {
+    position: relative; }
+  .nav__sublist {
+    position: absolute; }
+  .nav .nav__subitem {
+    width: 180px;
+    height: 0;
+    overflow: hidden;
+    background-color: rgba(4, 67, 109, 0.9);
+    transition: .2s; }
+  .nav__subitem:hover {
+    background-color: #04436d; }
+  .nav__list {
+    width: auto; }
+  .nav__list :hover > .nav__sublist > .nav__subitem {
+    height: 36px;
+    overflow: visible; }
+  .nav__link {
+    padding: 0 16px;
+    display: block;
+    line-height: 56px;
+    color: #fbfdff; }
+    .nav__link--subitem {
+      line-height: 36px; }
+
+.header {
+  width: 100%;
+  height: 56px;
+  position: fixed;
+  z-index: 10;
+  background-color: #04436d; }
+  .header__wrapper {
+    padding: 0 18px 0 18px;
+    background-color: #04436d;
+    max-width: 1280px;
+    height: 56px;
+    overflow: visible; }
 
 .title, .title__center, .title--white, .title--sub {
   font-family: 'Noto Serif','Noto Serif JP', serif;
