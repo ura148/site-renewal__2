@@ -13,3 +13,9 @@
     overflow: visible;
   }
 }
+
+@include mq(md){
+  .header{
+    display: none;
+  }
+}
