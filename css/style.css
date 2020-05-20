@@ -82,6 +82,7 @@ img {
     background-color: #fbfdff; }
 
 .home__backgroung-img {
+  margin-top: 56px;
   position: relative;
   width: 100%;
   height: 38.19vw;
@@ -179,6 +180,7 @@ img {
       line-height: 36px; }
 
 .header {
+  top: 0;
   width: 100%;
   height: 56px;
   position: fixed;
