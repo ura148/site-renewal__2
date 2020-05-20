@@ -34,3 +34,9 @@
     }
   }
 }
+
+@include mq(md){
+  .container{
+    flex-direction: column-reverse;
+  }
+}

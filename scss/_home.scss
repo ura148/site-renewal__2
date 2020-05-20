@@ -121,5 +121,35 @@
       left: 0;
       transform: translateY(-50%);
     }
+
+    &__reason-card{
+      margin-bottom: 40px;
+    }
+
+    &__reason-container-flex{
+      align-items:baseline;
+    }
+
+    %__reason-texture{
+      width: 200%;
+      top: 42px;
+      transform: none;
+      height: 48px;
+      overflow: hidden;
+    }
+
+    &__reason-texture{
+      &--right{
+        left: -50%;
+      }
+
+      &--left{
+        right: -50%;
+      }
+    }
+
+    &__reason-container:not(:last-child){
+      margin-bottom: 120px;
+    }
   }
 }

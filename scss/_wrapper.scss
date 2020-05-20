@@ -13,3 +13,9 @@
     background-color: $color__main;
   }
 }
+
+@include mq(md){
+  .wrapper{
+    padding: 148px 18px;
+  }
+}
