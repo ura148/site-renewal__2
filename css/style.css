@@ -42,7 +42,8 @@ img {
   text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
-  line-height: 1.5;
+  line-height: 1.75;
+  font-weight: 500;
   letter-spacing: 0.068em; }
   .text__margin-bottom {
     margin-bottom: 16px; }
@@ -52,7 +53,8 @@ img {
     font-size: 1.4rem; }
   .text--lg {
     font-size: 2.6rem;
-    font-family: 'Noto Serif','Noto Serif JP', serif; }
+    font-family: 'Noto Serif','Noto Serif JP', serif;
+    line-height: 1.5; }
   .text--bold {
     font-weight: bold; }
 
@@ -66,12 +68,16 @@ img {
   width: 181px;
   border-radius: 100px;
   background-color: #04436d;
-  box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.42); }
+  box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.42);
+  transition: .3s; }
   .btn--big {
     width: 258px;
     padding: 5px 0; }
   .btn--white {
     background-color: #fbfdff; }
+
+.btn:hover, .btn--big:hover {
+  transform: translateY(-4px); }
 
 .home__backgroung-img {
   position: relative;

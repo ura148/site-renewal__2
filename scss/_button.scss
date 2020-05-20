@@ -4,6 +4,7 @@
   border-radius: 100px;
   background-color: $color__main;
   box-shadow: 0 3px 5px 2px rgba(0,0,0,0.42);
+  transition: .3s;
 
   &--big{
     @extend .btn;
@@ -14,4 +15,8 @@
   &--white{
     background-color: $color__white;
   }
+}
+
+.btn:hover{
+  transform: translateY(-4px);
 }

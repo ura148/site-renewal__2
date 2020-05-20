@@ -6,7 +6,8 @@
 	text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
-  line-height: 1.5;
+  line-height: 1.75;
+  font-weight: 500;
 	letter-spacing: 0.068em;
 
   &__margin-bottom{
@@ -31,6 +32,7 @@
     @extend .text;
     font-size: 2.6rem;
     font-family: 'Noto Serif','Noto Serif JP', serif;
+    line-height: 1.5;
   }
 
   &--bold{
