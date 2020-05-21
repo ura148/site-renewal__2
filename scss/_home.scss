@@ -29,10 +29,6 @@
     margin-bottom: 160px;
   }
 
-  &__reason-container-flex{
-    align-items: center;
-  }
-
   &__reason-texture{
     @extend %__reason-texture;
 
@@ -67,7 +63,7 @@
     margin-right: 0;
   }
 
-  &__service-items:nth-child(-n+3){
+  &__service-item:nth-child(-n+3){
     margin-bottom: 44px;
   }
 
@@ -76,11 +72,15 @@
   }
 
   // reserch temple
+  &__2section-container{
+    max-width: none;
+  }
   &__reserch-temple-container{
     z-index: 5;
   }
-  &__background--img2{
+  &__2section-img{
     padding: 160px 0;
+    width: 50vw;
     position:relative;
     background-image: url(../img/temple.jpg);
     background-size: cover;
@@ -89,10 +89,14 @@
     &::before{
       content: "";
       width: 100%;
-      height: 544px;
+      height: 583px;
       background-color: rgba(0,0,0,0.6);
       position: absolute;
       top: 0;
+    }
+
+    &--2{
+      background-image:url(../img/cemetery.jpg);
     }
   }
 
@@ -100,23 +104,7 @@
     margin-bottom: 42px;
   }
 
-  &__background--img3{
-    padding: 160px 0;
-    position: relative;
-    width: 100%;
-    background-image:url(../img/cemetery.jpg);
-    background-size: cover;
-    background-position: center;
 
-    &::before{
-      content: "";
-      width: 100%;
-      height: 544px;
-      background-color: rgba(0,0,0,0.6);
-      position: absolute;
-      top: 0;
-    }
-  }
 }
 
 @include mq(md){

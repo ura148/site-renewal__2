@@ -15,26 +15,22 @@
     text-align: center;
   }
 
-  %__flex{
-    @extend .container;
-    display: flex;
-    flex-wrap: wrap;
+  &--aligh-center{
+    align-items: center;
   }
 
-  &__flex{
-    @extend %__flex;
+  &--flex{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+  }
 
-    &--center{
-      @extend %__flex;
-      justify-content: center;
+  &--flex-center{
+    justify-content: center;
+  }
 
-    }
-
-    &--reverse{
-      @extend %__flex;
-      justify-content: space-between;
-    }
+  &--flex-reverse{
+    flex-direction: row-reverse;
   }
 }
 
