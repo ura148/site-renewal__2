@@ -29,7 +29,6 @@
 
     &--reverse{
       @extend %__flex;
-      flex-direction: row-reverse;
       justify-content: space-between;
     }
   }
@@ -37,6 +36,6 @@
 
 @include mq(md){
   .container{
-    flex-direction: column-reverse;
+    
   }
 }

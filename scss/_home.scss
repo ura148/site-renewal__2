@@ -55,11 +55,15 @@
     margin-right: 0;
   }
 
-  &__service-items{
+  &__service-list{
+    flex-direction: row-reverse;
+  }
+
+  &__service-item{
     margin-right: 44px;
   }
 
-  &__service-items:nth-child(n+2):nth-child(odd){
+  &__service-item:nth-child(n+2):nth-child(odd){
     margin-right: 0;
   }
 
@@ -149,6 +153,23 @@
     }
 
     &__reason-container:not(:last-child){
+      margin-bottom: 120px;
+    }
+
+    &__service-list{
+      flex-direction: column;
+    }
+
+    &__service-item{
+      margin: 0 auto;
+    }
+
+    &__service-item:nth-child(n+2):nth-child(odd){
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    &__service-item:not(:last-child){
       margin-bottom: 120px;
     }
   }
