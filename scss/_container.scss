@@ -32,6 +32,10 @@
   &--flex-reverse{
     flex-direction: row-reverse;
   }
+
+  &--flex-column{
+    flex-direction: column;
+  }
 }
 
 @include mq(md){

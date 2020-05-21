@@ -46,6 +46,8 @@ img {
     justify-content: center; }
   .container--flex-reverse {
     flex-direction: row-reverse; }
+  .container--flex-column {
+    flex-direction: column; }
 
 .text, .text__sentence, .text__sentence--white, .text--sm, .text--lg, .text--bold {
   font-family: 'Noto Sans','Noto Sans JP', sans-serif;
@@ -80,6 +82,8 @@ img {
   width: 68px; }
   .icon--logo {
     width: 160px; }
+  .icon--angle-down {
+    font-size: 2rem; }
 
 .btn, .btn--big {
   padding: 3px 0;
@@ -202,13 +206,11 @@ img {
 .nav {
   display: flex;
   justify-content: flex-end; }
-  .nav .nav__item {
-    height: 56px; }
   .nav__item {
     position: relative; }
   .nav__sublist {
     position: absolute; }
-  .nav .nav__subitem {
+  .nav__subitem {
     width: 180px;
     height: 0;
     overflow: hidden;
@@ -218,17 +220,24 @@ img {
     background-color: #04436d; }
   .nav__list {
     width: auto; }
-  .nav__list :hover > .nav__sublist > .nav__subitem {
-    height: 36px;
-    overflow: visible; }
   .nav__link {
     padding: 0 16px;
     display: block;
-    line-height: 56px;
-    color: #fbfdff; }
+    line-height: 56px; }
     .nav__link--subitem {
       line-height: 36px; }
 
+@media screen and (max-width: 768px) {
+  .nav__item {
+    display: flex;
+    flex-wrap: wrap; }
+  .nav__sublist {
+    width: 100%; }
+  .nav__subitem {
+    width: 100%; }
+    .nav__subitem--active {
+      height: 36px;
+      overflow: visible; } }
 .header {
   top: 0;
   width: 100%;
@@ -245,7 +254,7 @@ img {
 
 @media screen and (max-width: 768px) {
   .header {
-    display: none; } }
+    display: block; } }
 .title, .title__center, .title--white, .title--sub {
   font-family: 'Noto Serif','Noto Serif JP', serif;
   font-size: 4.2rem;
@@ -311,11 +320,6 @@ img {
 .footer__logo {
   display: block;
   margin: 0 auto 32px; }
-.footer__list {
-  height: 40px; }
-.footer__item {
-  line-height: 40px;
-  display: block; }
 .footer__copylights {
   margin-left: calc( (-100vw + 1080px) / 2 );
   margin-right: calc( (-100vw + 1080px) / 2 );
@@ -326,5 +330,11 @@ img {
 .footer__small {
   line-height: 28px;
   color: #fbfdff; }
+
+@media screen and (max-width: 768px) {
+  .footer__nav {
+    flex-direction: column; }
+  .footer__nav-sublist {
+    position: relative; } }
 
 /*# sourceMappingURL=style.css.map */

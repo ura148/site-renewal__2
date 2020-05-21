@@ -11,15 +11,6 @@
     margin: 0 auto 32px;
   }
 
-  &__list{
-    height: 40px
-  }
-
-  &__item{
-    line-height: 40px;
-    display: block;
-  }
-
   &__copylights{
     margin-left: calc( (-100vw + 1080px) / 2 );
     margin-right: calc( (-100vw + 1080px) / 2 );
@@ -32,5 +23,16 @@
   &__small{
     line-height: 28px;
     color: $color__white;
+  }
+}
+
+@include mq(md){
+  .footer{
+    &__nav{
+      flex-direction: column;
+    }
+    &__nav-sublist{
+      position: relative;
+    }
   }
 }

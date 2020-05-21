@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans:wght@400;700&family=Noto+Serif+JP:wght@400;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="home">
   <header class="header">
@@ -273,71 +274,97 @@
       <a href="#">
         <img src="./img/logo__black.png" alt="" class="icon--logo footer__logo">
       </a>
-      <div class="container container--flex footer__container">
-        <ul>
-          <li><a href="" class="text">霊園・お墓を探す</a>
-            <ul>
-              <li class="footer__list"><a href="" class="text--sm footer__item">台雲寺</a></li>
-              <li class="footer__list"><a href="" class="text--sm footer__item">台雲寺</a></li>
-              <li class="footer__list"><a href="" class="text--sm footer__item">台雲寺</a></li>
+      <div class="footer__container">
+        <nav class="nav footer__nav container container--flex">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="" class="nav__link">
+                  <span class="text text--bold">霊園・お墓を探す</span>
+                </a>
+                  <button type="button" name="button" class="nav__btn"><span class="fa fa-angle-down icon--angle-down"></span></button>
+                  <ul class="nav__sublist footer__nav-sublist">
+                    <li class="nav__subitem"><a href="" class="text--sm nav__link text--bold nav__link--subitem">台雲寺</a></li>
+                    <li class="nav__subitem"><a href="" class="text--sm nav__link text--bold nav__link--subitem">台雲寺</a></li>
+                    <li class="nav__subitem"><a href="" class="text--sm nav__link text--bold nav__link--subitem">台雲寺</a></li>
+                </ul>
+              </li>
             </ul>
-          </li>
-        </ul>
 
-        <ul>
-          <li><a href="" class="text">お墓を建てる</a>
-            <ul>
-              <li class="footer__list"><a href="" class="text--sm footer__item">お墓の選び方</a></li>
-              <li class="footer__list"><a href="" class="text--sm footer__item">お墓の種類</a></li>
-              <li class="footer__list"><a href="" class="text--sm footer__item">申込から建墓まで</a></li>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="" class="nav__link">
+                  <span class="text text--bold">お墓を建てる</span>
+                </a>
+                  <button type="button" name="button" class="nav__btn"><span class="fa fa-angle-down icon--angle-down"></span></button>
+                  <ul class="nav__sublist footer__nav-sublist">
+                    <li class="nav__subitem"><a href="" class="text--sm nav__link text--bold nav__link--subitem">お墓の選び方</a></li>
+                    <li class="nav__subitem"><a href="" class="text--sm nav__link text--bold nav__link--subitem">お墓の種類</a></li>
+                    <li class="nav__subitem"><a href="" class="text--sm nav__link text--bold nav__link--subitem">申込から建墓まで</a></li>
+                </ul>
+              </li>
             </ul>
-          </li>
-        </ul>
 
-        <ul>
-          <li><a href="" class="text">各種サービス</a>
-            <ul>
-              <li class="footer__list"><a href="" class="text--sm footer__item">メンテナンス</a></li>
-              <li class="footer__list"><a href="" class="text--sm footer__item">納骨</a></li>
-              <li class="footer__list"><a href="" class="text--sm footer__item">彫刻</a></li>
-              <li class="footer__list"><a href="" class="text--sm footer__item">リフォーム</a></li>
-              <li class="footer__list"><a href="" class="text--sm footer__item">お墓じまい・引越し</a></li>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="" class="nav__link">
+                  <span class="text text--bold">各種サービス</span>
+                </a>
+                  <button type="button" name="button" class="nav__btn"><span class="fa fa-angle-down icon--angle-down"></span></button>
+                  <ul class="nav__sublist footer__nav-sublist">
+                    <li class="nav__subitem"><a href="" class="text--sm nav__link text--bold nav__link--subitem">メンテナンス</a></li>
+                    <li class="nav__subitem"><a href="" class="text--sm nav__link text--bold nav__link--subitem">納骨</a></li>
+                    <li class="nav__subitem"><a href="" class="text--sm nav__link text--bold nav__link--subitem">彫刻</a></li>
+                    <li class="nav__subitem"><a href="" class="text--sm nav__link text--bold nav__link--subitem">リフォーム</a></li>
+                    <li class="nav__subitem"><a href="" class="text--sm nav__link text--bold nav__link--subitem">お墓じまい・引越し</a></li>
+                </ul>
+              </li>
             </ul>
-          </li>
-        </ul>
 
-        <ul>
-          <li><a href="" class="text">浦木石材について</a>
-            <ul>
-              <li class="footer__list"><a href="" class="text--sm footer__item">社長挨拶</a></li>
-              <li class="footer__list"><a href="" class="text--sm footer__item">会社概要</a></li>
-              <li class="footer__list"><a href="" class="text--sm footer__item">当社が選ばれる理由</a></li>
-              <li class="footer__list"><a href="" class="text--sm footer__item">ブログ</a></li>
-              <li class="footer__list"><a href="" class="text--sm footer__item">会報誌</a></li>
-              <li class="footer__list"><a href="" class="text--sm footer__item">施工実績</a></li>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="" class="nav__link">
+                  <span class="text text--bold">浦木石材について</span>
+                </a>
+                  <button type="button" name="button" class="nav__btn"><span class="fa fa-angle-down icon--angle-down"></span></button>
+                  <ul class="nav__sublist footer__nav-sublist">
+                    <li class="nav__subitem"><a href="" class="text--sm nav__link text--bold nav__link--subitem">社長挨拶</a></li>
+                    <li class="nav__subitem"><a href="" class="text--sm nav__link text--bold nav__link--subitem">会社概要</a></li>
+                    <li class="nav__subitem"><a href="" class="text--sm nav__link text--bold nav__link--subitem">当社が選ばれる理由</a></li>
+                    <li class="nav__subitem"><a href="" class="text--sm nav__link text--bold nav__link--subitem">ブログ</a></li>
+                    <li class="nav__subitem"><a href="" class="text--sm nav__link text--bold nav__link--subitem">会報誌</a></li>
+                    <li class="nav__subitem"><a href="" class="text--sm nav__link text--bold nav__link--subitem">施工実績</a></li>
+                </ul>
+              </li>
             </ul>
-          </li>
-        </ul>
 
-        <ul>
-          <li><a href="" class="text">よくあるご質問</a>
-            <ul>
-              <li class="footer__list"><a href="" class="text--sm footer__item">霊園・お寺について</a></li>
-              <li class="footer__list"><a href="" class="text--sm footer__item">お墓について</a></li>
-              <li class="footer__list"><a href="" class="text--sm footer__item">ローンについて</a></li>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="" class="nav__link">
+                  <span class="text text--bold">よくあるご質問</span>
+                </a>
+                  <button type="button" name="button" class="nav__btn"><span class="fa fa-angle-down icon--angle-down"></span></button>
+                  <ul class="nav__sublist footer__nav-sublist">
+                    <li class="nav__subitem"><a href="" class="text--sm nav__link text--bold nav__link--subitem">霊園・お寺について</a></li>
+                    <li class="nav__subitem"><a href="" class="text--sm nav__link text--bold nav__link--subitem">お墓について</a></li>
+                    <li class="nav__subitem"><a href="" class="text--sm nav__link text--bold nav__link--subitem">ローンいついて</a></li>
+                </ul>
+              </li>
             </ul>
-          </li>
-        </ul>
 
-        <ul>
-          <li><a href="" class="text">お問い合わせ</a></li>
-        </ul>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="" class="nav__link">
+                  <span class="text text--bold">お問い合わせ</span>
+                </a>
+              </li>
+            </ul>
+        </nav>
 
-      </div>
 
     <div class="wrapper--blue footer__copylights"><small class="footer__small">Copyright© 2020 URAKI-SEKIZAI All Rights Reserved.</small></div>
   </footer>
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="./js/style.js"></script>
 </body>
 </html>
