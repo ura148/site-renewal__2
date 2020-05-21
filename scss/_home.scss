@@ -165,5 +165,16 @@
     &__service-item:not(:last-child){
       margin-bottom: 120px;
     }
+
+    &__2section-img{
+      padding: 148px 0;
+      width: 100vw;
+
+      &::before{
+        height: 512px;
+      }
+    }
+
+
   }
 }

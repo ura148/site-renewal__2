@@ -36,7 +36,8 @@
   }
 
   &--bold{
-    font-weight: bold;
+    @extend .text;
+    font-weight: 600;
   }
 
   &--white{
@@ -46,6 +47,8 @@
 
 @include mq(md){
   .text{
-
+    &--lg{
+      font-size: 1.6rem;
+    }
   }
 }
