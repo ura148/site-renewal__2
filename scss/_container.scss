@@ -7,6 +7,10 @@
     position: relative;
   }
 
+  &--right{
+    text-align: right;
+  }
+
   &--center{
     text-align: center;
   }
@@ -36,6 +40,6 @@
 
 @include mq(md){
   .container{
-    
+
   }
 }

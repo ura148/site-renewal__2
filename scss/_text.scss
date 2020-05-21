@@ -38,10 +38,14 @@
   &--bold{
     font-weight: bold;
   }
+
+  &--white{
+    color: $color__white;
+  }
 }
 
 @include mq(md){
   .text{
-    
+
   }
 }

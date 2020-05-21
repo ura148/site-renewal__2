@@ -30,6 +30,8 @@ img {
   max-width: 1080px; }
   .container--bace {
     position: relative; }
+  .container--right {
+    text-align: right; }
   .container--center {
     text-align: center; }
   .container .container__flex, .container .container__flex--center, .container .container__flex--reverse {
@@ -65,6 +67,8 @@ img {
     line-height: 1.5; }
   .text--bold {
     font-weight: bold; }
+  .text--white {
+    color: #fbfdff; }
 
 .icon {
   width: 68px; }
@@ -131,33 +135,37 @@ img {
   margin-bottom: 44px; }
 .home__service-sentence {
   margin-bottom: 26px; }
-.home__reserch-temple-background-img-1 {
+.home__reserch-temple-container {
+  z-index: 5; }
+.home__background--img2 {
+  padding: 160px 0;
   position: relative;
-  left: -18px;
-  width: 782px;
-  height: 483px;
   background-image: url(../img/temple.jpg);
   background-size: cover;
   background-position: center; }
-.home__reserch-temple-card {
-  position: absolute;
-  top: 184px;
-  left: 504px; }
+  .home__background--img2::before {
+    content: "";
+    width: 100%;
+    height: 544px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0; }
 .home__reserch-temple-sentence {
   margin-bottom: 42px; }
-.home__make-grave-background-img-1 {
+.home__background--img3 {
+  padding: 160px 0;
   position: relative;
-  right: -18px;
-  margin: 0 0 0 auto;
-  width: 782px;
-  height: 483px;
-  background-image: url(../img/temple.jpg);
+  width: 100%;
+  background-image: url(../img/cemetery.jpg);
   background-size: cover;
   background-position: center; }
-.home__make-grave-card {
-  position: absolute;
-  top: 184px;
-  right: 504px; }
+  .home__background--img3::before {
+    content: "";
+    width: 100%;
+    height: 544px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0; }
 
 @media screen and (max-width: 768px) {
   .home__backgroung-img {
@@ -264,11 +272,11 @@ img {
 .card--lg {
   opacity: 0.83; }
 
-.card--video, .card .card--sm, .card .card--sm--center, .card--md, .card--lg, .card .card--xl, .card .card--xl--center {
+.card--video, .card .card--sm, .card .card--sm--center, .card--md, .card--lg {
   box-sizing: border-box;
   background-color: #fbfdff; }
 
-.card--video, .card .card--sm, .card .card--sm--center, .card--md, .card--lg, .card .card--xl, .card .card--xl--center {
+.card--video, .card .card--sm, .card .card--sm--center, .card--md, .card--lg {
   box-shadow: 0 3px 6px 2px rgba(0, 0, 0, 0.32); }
 
 .card--video {
@@ -285,11 +293,6 @@ img {
 .card--lg {
   width: 520px;
   padding: 68px; }
-.card .card--xl, .card .card--xl--center {
-  width: 540px;
-  padding: 52PX; }
-.card--xl--center {
-  text-align: center; }
 
 @media screen and (max-width: 768px) {
   .card--video {

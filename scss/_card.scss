@@ -49,21 +49,21 @@
     @extend %shadow;
   }
 
-  %--xl{
-    @extend %bace;
-    width: 540px;
-    padding: 52PX;
-    @extend %shadow;
-  }
-
-  &--xl{
-    @extend %--xl;
-
-    &--center{
-      @extend %--xl;
-      text-align: center;
-    }
-  }
+  // %--xl{
+  //   @extend %bace;
+  //   width: 540px;
+  //   padding: 52PX;
+  //   @extend %shadow;
+  // }
+  //
+  // &--xl{
+  //   @extend %--xl;
+  //
+  //   &--center{
+  //     @extend %--xl;
+  //     text-align: center;
+  //   }
+  // }
 }
 
 @include mq(md){

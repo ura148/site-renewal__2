@@ -76,41 +76,46 @@
   }
 
   // reserch temple
-  &__reserch-temple-background-img-1{
+  &__reserch-temple-container{
+    z-index: 5;
+  }
+  &__background--img2{
+    padding: 160px 0;
     position:relative;
-    left: -18px;
-    width: 782px;
-    height: 483px;
     background-image: url(../img/temple.jpg);
     background-size: cover;
     background-position: center;
-  }
 
-  &__reserch-temple-card{
-    position: absolute;
-    top: 184px;
-    left: 504px;
+    &::before{
+      content: "";
+      width: 100%;
+      height: 544px;
+      background-color: rgba(0,0,0,0.6);
+      position: absolute;
+      top: 0;
+    }
   }
 
   &__reserch-temple-sentence{
     margin-bottom: 42px;
   }
 
-  &__make-grave-background-img-1{
-    position:relative;
-    right: -18px;
-    margin: 0 0 0 auto;
-    width: 782px;
-    height: 483px;
-    background-image: url(../img/temple.jpg);
+  &__background--img3{
+    padding: 160px 0;
+    position: relative;
+    width: 100%;
+    background-image:url(../img/cemetery.jpg);
     background-size: cover;
     background-position: center;
-  }
 
-  &__make-grave-card{
-    position: absolute;
-    top: 184px;
-    right: 504px;
+    &::before{
+      content: "";
+      width: 100%;
+      height: 544px;
+      background-color: rgba(0,0,0,0.6);
+      position: absolute;
+      top: 0;
+    }
   }
 }
 
