@@ -1,4 +1,4 @@
-$(".nav__btn").on("click", function(){
+$(".nav__btn").on("click ", function(){
   if($(this).hasClass("active")){
     $(this).children().addClass("fa-angle-down");
     $(this).children().removeClass("fa-angle-up");

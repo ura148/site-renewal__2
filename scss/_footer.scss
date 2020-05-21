@@ -6,6 +6,7 @@
     align-items: stretch;
     margin-bottom: 160px;
   }
+
   &__logo{
     display: block;
     margin: 0 auto 32px;
@@ -28,11 +29,22 @@
 
 @include mq(md){
   .footer{
+    &__container{
+      margin-bottom: 0;
+    }
+
     &__nav{
       flex-direction: column;
     }
+
     &__nav-sublist{
       position: relative;
+    }
+
+    &__copylights{
+      margin-left: -18px;
+      margin-right: -18px;
+      margin-top: 14px;
     }
   }
 }
