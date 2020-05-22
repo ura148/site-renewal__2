@@ -7,53 +7,46 @@
   background-color: $color__white;
 }
 
-%shadow{
-  box-shadow: 0 3px 6px 2px rgba(0,0,0,0.32);
-}
 
 .card{
+  box-shadow: 0 3px 6px 2px rgba(0,0,0,0.32);
   &--video{
     @extend %bace;
     width: 512px;
     height: 288px;
-    @extend %shadow;
+
   }
 
   // size
-  %--sm{
+  &--sm{
     @extend %bace;
     width: 318px;
     padding: 32px;
-    @extend %shadow;
-  }
 
-  &--sm{
-    @extend %--sm;
-
-    &--center{
-      @extend %--sm;
+    &-center{
       text-align: center;
     }
   }
+
   &--md{
     @extend %bace;
     width: 496px;
     padding: 42px;
-    @extend %shadow;
+
   }
   &--lg{
     @extend %bace;
     @extend %translucent;
     width: 520px;
     padding:68px;
-    @extend %shadow;
+
   }
 
   // %--xl{
   //   @extend %bace;
   //   width: 540px;
   //   padding: 52PX;
-  //   @extend %shadow;
+
   // }
   //
   // &--xl{
@@ -92,6 +85,14 @@
     }
 
     &--md{
+      width: 100%;
+    }
+  }
+}
+
+@include mq(sm){
+  .card{
+    &--sm{
       width: 100%;
     }
   }
