@@ -66,6 +66,15 @@
   // }
 }
 
+@include mq(lg){
+  .card{
+    &--video{
+      width: 47%;
+      height: auto;
+    }
+  }
+}
+
 @include mq(md){
   .card{
     &--video{

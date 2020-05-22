@@ -138,6 +138,44 @@ img {
     right: 18px;
     z-index: 50;
     -webkit-appearance: none; } }
+.card--lg {
+  opacity: 0.83; }
+
+.card--video, .card .card--sm, .card .card--sm--center, .card--md, .card--lg {
+  box-sizing: border-box;
+  background-color: #fbfdff; }
+
+.card--video, .card .card--sm, .card .card--sm--center, .card--md, .card--lg {
+  box-shadow: 0 3px 6px 2px rgba(0, 0, 0, 0.32); }
+
+.card--video {
+  width: 512px;
+  height: 288px; }
+.card .card--sm, .card .card--sm--center {
+  width: 318px;
+  padding: 32px; }
+.card--sm--center {
+  text-align: center; }
+.card--md {
+  width: 496px;
+  padding: 42px; }
+.card--lg {
+  width: 520px;
+  padding: 68px; }
+
+@media screen and (max-width: 1079px) {
+  .card--video {
+    width: 47%;
+    height: auto; } }
+@media screen and (max-width: 768px) {
+  .card--video {
+    width: 100%;
+    height: 56.25%; }
+  .card--lg {
+    width: 100%;
+    padding: 18px; }
+  .card--md {
+    width: 100%; } }
 .home__backgroung-img {
   margin-top: 56px;
   position: relative;
@@ -201,6 +239,11 @@ img {
 .home__reserch-temple-sentence {
   margin-bottom: 42px; }
 
+@media screen and (max-width: 1079px) {
+  .home__reason-container-video {
+    width: 47%; }
+  .home__reason-card {
+    width: 46%; } }
 @media screen and (max-width: 768px) {
   .home__backgroung-img {
     height: calc(100vh - 48px); }
@@ -399,39 +442,5 @@ img {
     .title--sub {
       font-size: 2.2rem;
       margin-bottom: 35px; } }
-.card--lg {
-  opacity: 0.83; }
-
-.card--video, .card .card--sm, .card .card--sm--center, .card--md, .card--lg {
-  box-sizing: border-box;
-  background-color: #fbfdff; }
-
-.card--video, .card .card--sm, .card .card--sm--center, .card--md, .card--lg {
-  box-shadow: 0 3px 6px 2px rgba(0, 0, 0, 0.32); }
-
-.card--video {
-  width: 512px;
-  height: 288px; }
-.card .card--sm, .card .card--sm--center {
-  width: 318px;
-  padding: 32px; }
-.card--sm--center {
-  text-align: center; }
-.card--md {
-  width: 496px;
-  padding: 42px; }
-.card--lg {
-  width: 520px;
-  padding: 68px; }
-
-@media screen and (max-width: 768px) {
-  .card--video {
-    width: 100%;
-    height: 56.25%; }
-  .card--lg {
-    width: 100%;
-    padding: 18px; }
-  .card--md {
-    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

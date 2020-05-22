@@ -103,8 +103,18 @@
   &__reserch-temple-sentence{
     margin-bottom: 42px;
   }
+}
 
+@include mq(lg){
+  .home{
+    &__reason-container-video{
+      width: 47%;
+    }
 
+    &__reason-card{
+      width: 46%;
+    }
+  }
 }
 
 @include mq(md){
