@@ -184,7 +184,7 @@ img {
   background-image: url(../img/eyecatch.jpg);
   background-size: cover;
   background-position: center; }
-.home__card-position {
+.home__eyecatch-card {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -240,17 +240,30 @@ img {
   margin-bottom: 42px; }
 
 @media screen and (max-width: 1079px) {
+  .home__backgroung-img {
+    height: 61.8vw; }
+  .home__eyecatch-card {
+    position: absolute;
+    padding: 5.8%;
+    top: 50%;
+    left: auto;
+    right: 2%;
+    transform: translateY(-50%);
+    width: 100%;
+    max-width: 500px; }
   .home__reason-container-video {
     width: 47%; }
   .home__reason-card {
     width: 46%; } }
 @media screen and (max-width: 768px) {
   .home__backgroung-img {
-    height: calc(100vh - 48px); }
-  .home__card-position {
+    height: calc(100vh - 48px);
+    background-position: left; }
+  .home__eyecatch-card {
     top: calc((100vh - 48px) / 2);
-    left: 0;
-    transform: translateY(-50%); }
+    right: 0;
+    transform: translateY(-50%);
+    max-width: none; }
   .home__reason-card {
     margin-bottom: 40px; }
   .home__reason-container-flex {
