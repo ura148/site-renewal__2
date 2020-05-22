@@ -27,13 +27,18 @@ $(".nav__btn").on("click ", function(){
 
 let hover = () => {
     let ua = navigator.userAgent.toLowerCase();
+        winW = $(window).width();
+        devW = 1080;
     $(window).on('load resize orientationchange', function() {
         if (ua.indexOf('iphone') > 0 || ua.indexOf('ipad') > 0 || ua.indexOf('android') > 0 || ua.indexOf('ipod') > 0 || ua.indexOf('android') > 0 && ua.indexOf('mobile') > 0) {
             $(".nav__item , .nav__subitem , .nav__sublink").removeClass('hover');
             console.log("sp");
-        } else {
+        } else if(winW < devW){
+            $(".nav__item , .nav__subitem , .nav__sublink").removeClass('hover');
+            console.log("pc < 1080");
+        } else{
             $(".nav__item , .nav__subitem , .nav__sublink").addClass('hover');
-            console.log("pc");
+            console.log("pc > 1080");
         }
     });
 }
