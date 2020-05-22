@@ -93,7 +93,7 @@
   }
 }
 
-@include mq(md){
+@include mq(lg){
   .nav{
     &--header{
       flex-direction: column;

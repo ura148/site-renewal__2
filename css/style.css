@@ -129,7 +129,7 @@ img {
   .btn--white {
     background-color: #fbfdff; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1079px) {
   .btn__trigger-header {
     display: block;
     position: absolute;
@@ -291,7 +291,7 @@ img {
       .nav__sublink--footer:hover {
         color: #04436d; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1079px) {
   .nav--header {
     flex-direction: column;
     display: none;
