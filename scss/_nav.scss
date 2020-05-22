@@ -8,10 +8,7 @@
 
   &__btn{
     margin: 0 18px 0 auto;
-
-    &--footer{
-      display: none;
-    }
+    display: none;
   }
 
   &__item{
@@ -70,6 +67,10 @@
     }
   }
 
+  &__link-txt{
+    color: $color__white;
+  }
+
   &__sublink{
     margin: 0 18px;
     line-height: 36px;
@@ -92,6 +93,9 @@
 
 @include mq(md){
   .nav{
+    &--header{
+      flex-direction: column;
+    }
     &--footer{
       flex-direction: column;
     }
