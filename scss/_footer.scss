@@ -4,7 +4,6 @@
   }
   &__container{
     align-items: stretch;
-    margin-bottom: 160px;
   }
 
   &__logo{
@@ -27,12 +26,18 @@
   }
 }
 
+@include mq(lg){
+  .footer{
+    &__copylights{
+      margin-left: -18px;
+      margin-right: -18px;
+      margin-top: 14px;
+    }
+  }
+}
+
 @include mq(md){
   .footer{
-    &__container{
-      margin-bottom: 0;
-    }
-
     &__nav-subitem{
       height: 0;
 
@@ -40,12 +45,6 @@
       height: 36px;
       overflow: visible;
       }
-    }
-
-    &__copylights{
-      margin-left: -18px;
-      margin-right: -18px;
-      margin-top: 14px;
     }
   }
 }

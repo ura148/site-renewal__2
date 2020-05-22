@@ -344,8 +344,7 @@ img {
 .footer__wrapper {
   padding-bottom: 0; }
 .footer__container {
-  align-items: stretch;
-  margin-bottom: 160px; }
+  align-items: stretch; }
 .footer__logo {
   display: block;
   margin: 0 auto 32px; }
@@ -360,18 +359,17 @@ img {
   line-height: 28px;
   color: #fbfdff; }
 
-@media screen and (max-width: 768px) {
-  .footer__container {
-    margin-bottom: 0; }
-  .footer__nav-subitem {
-    height: 0; }
-    .footer__nav-subitem--active {
-      height: 36px;
-      overflow: visible; }
+@media screen and (max-width: 1079px) {
   .footer__copylights {
     margin-left: -18px;
     margin-right: -18px;
     margin-top: 14px; } }
+@media screen and (max-width: 768px) {
+  .footer__nav-subitem {
+    height: 0; }
+    .footer__nav-subitem--active {
+      height: 36px;
+      overflow: visible; } }
 .title, .title__center, .title--white, .title--sub {
   font-family: 'Noto Serif','Noto Serif JP', serif;
   font-size: 4.2rem;
