@@ -14,9 +14,11 @@
   &__item{
     position: relative;
 
-    &--header:hover > ul > li{
-      height: 36px;
-      overflow: visible;
+    &--header{
+      &.hover:hover > ul > li{
+        height: 36px;
+        overflow: visible;
+      }
     }
   }
 
@@ -38,7 +40,7 @@
     &--header{
       background-color: $color__main--opacity;
 
-      &:hover{
+      &.hover:hover{
         background-color: $color__white;
       }
     }
@@ -76,7 +78,7 @@
     line-height: 36px;
     color: $color__white;
 
-    &:hover{
+    &.hover:hover{
       color: $color__main;
     }
 
@@ -100,16 +102,17 @@
       flex-direction: column;
     }
     &__btn{
-      &--footer{
-        display: block;
-      }
+      display: block;
     }
     &__item{
       display: flex;
       flex-wrap: wrap;
     }
 
+
+
     &__sublist{
+      position: relative;
       width: 100%;
     }
 
@@ -125,13 +128,5 @@
         overflow: visible;
         }
     }
-
-
-    // &__btn :focus > ul > li{
-    //   height: 36px;
-    //   overflow: visible;
-    // }
-
-
   }
 }
