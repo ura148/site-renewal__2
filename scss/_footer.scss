@@ -33,12 +33,17 @@
       margin-bottom: 0;
     }
 
-    &__nav{
-      flex-direction: column;
-    }
-
     &__nav-sublist{
       position: relative;
+    }
+
+    &__nav-subitem{
+      height: 0;
+
+      &--active{
+      height: 36px;
+      overflow: visible;
+      }
     }
 
     &__copylights{
