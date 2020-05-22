@@ -5,7 +5,11 @@
     width: 160px;
   }
 
-    &--angle{
+  &--angle{
     font-size: 2rem;
+  }
+
+  &--angle-white{
+    color: $color__white;
   }
 }

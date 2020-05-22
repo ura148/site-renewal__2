@@ -5,6 +5,7 @@
   position: fixed;
   z-index: 10;
   background-color: $color__main;
+
   &__wrapper{
     padding: 0 18px 0 18px;
     background-color: $color__main;
@@ -12,6 +13,14 @@
     height: 56px;
     overflow: visible;
   }
+
+  &__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
 }
 
 @include mq(md){

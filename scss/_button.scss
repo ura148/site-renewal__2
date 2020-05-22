@@ -6,6 +6,49 @@
   box-shadow: 0 3px 5px 2px rgba(0,0,0,0.42);
   transition: .3s;
 
+  &__trigger-header{
+  	display: none;
+  }
+
+  &__trigger-header-line{
+    position: absolute;
+    display: block;
+    width: 34px;
+    height: 2px;
+  	border-radius: 1px;
+    background-color: $color__white;
+  	transition: all 0.5s;
+
+    &--1{
+      top: 0;
+    }
+
+    &--2{
+      top: 8px;
+    }
+
+    &--3{
+      top: 16px;
+    }
+  }
+
+  &__trigger-header-txt{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: $color__white;
+    font-size: 1.2rem;
+
+    &--menu{
+
+    }
+
+    &--close{
+      display: none;
+    }
+  }
+
+
   &:hover{
     transform: translateY(-4px);
     background-color:$color__white;
@@ -23,5 +66,19 @@
 
   &--white{
     background-color: $color__white;
+  }
+}
+
+@include mq(md){
+  .btn{
+    &__trigger-header{
+      display: block;
+      position: absolute;
+      width: 36px;
+      height: 36px;
+    	right: 18px;
+    	z-index: 50;
+      -webkit-appearance: none;
+    }
   }
 }

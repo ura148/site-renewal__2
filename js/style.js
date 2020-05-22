@@ -1,3 +1,16 @@
+$("#btnTriggerHeader").on("click" , function(){
+  if($(this).hasClass("active")){
+    $(this).toggleClass("active");
+    $(".nav--header").fadeToggle(500);
+  }else{
+    $(this).toggleClass("active");
+    $(".nav--header").fadeToggle(500);
+  }
+  // $(this).toggleClass("active");
+  // // $(".header-nav").toggleClass("dn");
+  // $(".header-nav").fadeToggle(500);
+});
+
 $(".nav__btn").on("click ", function(){
   if($(this).hasClass("active")){
     $(this).children().addClass("fa-angle-down");
@@ -10,6 +23,7 @@ $(".nav__btn").on("click ", function(){
   }
   $("+ .nav__sublist > .nav__subitem", this).toggleClass("nav__subitem--active");
 });
+
 
 let hover = () => {
     let ua = navigator.userAgent.toLowerCase();
@@ -27,28 +41,3 @@ let hover = () => {
 $(function(){
     hover();
 });
-
-
-
-
-
-
-
-
-
-
-
-// $(function () {
-//     var ua = navigator.userAgent.toLowerCase();
-//     if (ua.indexOf('iphone') > 0 || ua.indexOf('ipad') > 0 || ua.indexOf('android') > 0 || ua.indexOf('ipod') > 0 || ua.indexOf('android') > 0 && ua.indexOf('mobile') > 0) {
-//         // スマートフォンの場合実行
-//
-//     } else if (ua.indexOf('ipad') > 0 || ua.indexOf('android') > 0) {
-//         // タブレットの場合実行
-//
-//     } else {
-//         // PC用の場合実行
-//
-//     }
-// })
-// コード選択コード選択
