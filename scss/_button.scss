@@ -49,12 +49,12 @@
   }
 
 
-  &:hover{
+  &.hover:hover{
     transform: translateY(-4px);
     background-color:$color__white;
   }
 
-  &:hover > span{
+  &.hover:hover > span{
     color: $color__main;
   }
 
