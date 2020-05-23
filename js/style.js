@@ -54,3 +54,22 @@ $(window).on('resize load orientationchange scroll', function() {
         console.log(winW);
     }
 });
+
+// fade inさせるアニメーション
+$(function(){
+  $(window).scroll(function(){
+    let scrollTop = $(window).scrollTop(),
+        windowHeight = $(window).height(),
+        scrollBottom = scrollTop + windowHeight;
+
+    $(".animation__fade-bace").each(function(){
+      let itemTop = $(this).offset().top,
+          itemHeight =$(this).height(),
+          fadeStart = itemTop + (itemHeight / 2);
+
+          if (scrollTop > fadeStart - windowHeight){
+            $(this).addClass('animation__fade-in');
+          }
+    });
+  });
+});
