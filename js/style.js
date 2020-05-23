@@ -36,22 +36,17 @@ $(window).on('resize load orientationchange scroll', function() {
         devW = 1080;
         hover = ".nav__item,.nav__subitem,.nav__sublink";
 
-        console.log(hover);
-
     if (ua.indexOf('iphone') > 0 || ua.indexOf('ipad') > 0 || ua.indexOf('android') > 0 || ua.indexOf('ipod') > 0 || ua.indexOf('mobile') > 0 ) {
         $(hover).removeClass('hover');
-        console.log("sp");
-        console.log(winW);
+
     } else if(winW < devW){
         $(hover).removeClass('hover');
         $(".nav--header").css("display","none");
-        console.log("pc < 1080");
-        console.log(winW);
+
     } else{
         $(hover).addClass('hover');
         $(".nav--header").css("display","flex");
-        console.log("pc > 1080");
-        console.log(winW);
+
     }
 });
 
