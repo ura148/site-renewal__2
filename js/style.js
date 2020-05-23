@@ -1,3 +1,5 @@
+let winH = $(window).height();
+
 $("#btnTriggerHeader").on("click" , function(){
   let btnTriggerLine = $(".btn__trigger-header-line");
   if($(this).hasClass("active")){
@@ -51,30 +53,29 @@ $(window).on('resize load orientationchange scroll', function() {
 });
 
 // fade inさせるアニメーション
-$(function(){
-  $(window).scroll(function(){
-    let scrollTop = $(window).scrollTop(),
-        windowHeight = $(window).height(),
-        scrollBottom = scrollTop + windowHeight;
+$(window).scroll(function(){
+  let scrollTop = $(window).scrollTop(),
 
-    $(".animation__fade-bace").each(function(){
-      let itemTop = $(this).offset().top,
-          itemHeight =$(this).height(),
-          fadeStart = itemTop + (itemHeight / 2);
+      scrollBottom = scrollTop + winH;
 
-          if (scrollTop > fadeStart - windowHeight){
-            $(this).addClass('animation__fade-in');
-          }
-    });
+  $(".animation__fade-bace").each(function(){
+    let itemTop = $(this).offset().top,
+        itemHeight =$(this).height(),
+        fadeStart = itemTop + (itemHeight / 2);
+
+        if (scrollTop > fadeStart - winH){
+          $(this).addClass('animation__fade-in');
+        }
   });
 });
+
 
 $(function(){
     let parallaxFix = $(".parallax__fix");
         parallaxFixPosOT = parallaxFix.offset().top;
         targetFactor = 0.5;
         windowH = $(window).height();
-        parallaxFixStart = parallaxFixPosOT - windowH;
+        parallaxFixStart = parallaxFixPosOT - winH;
 
   $(window).on('scroll',function(){
     let scrollY = $(this).scrollTop();
