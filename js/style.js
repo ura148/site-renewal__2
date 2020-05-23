@@ -1,10 +1,17 @@
 $("#btnTriggerHeader").on("click" , function(){
+  let btnTriggerLine = $(".btn__trigger-header-line");
   if($(this).hasClass("active")){
     $(this).toggleClass("active");
+    btnTriggerLine.toggleClass("active");
     $(".nav--header").fadeToggle(500);
+    $(".btn__trigger-header-txt--menu").css("display","block");
+    $(".btn__trigger-header-txt--close").css("display","none");
   }else{
-    $(this).toggleClass("active");
+    $(this, ".btn__trigger-header-line").toggleClass("active");
+    btnTriggerLine.toggleClass("active");
     $(".nav--header").fadeToggle(500);
+    $(".btn__trigger-header-txt--menu").css("display","none");
+    $(".btn__trigger-header-txt--close").css("display","block");
   }
 });
 
