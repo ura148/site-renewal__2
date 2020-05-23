@@ -196,8 +196,9 @@ img {
   width: 50vw;
   position: relative;
   background-image: url(../img/temple.jpg);
-  background-size: cover;
-  background-position: center; }
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 140%; }
   .home__2section-img::before {
     content: "";
     width: 100%;

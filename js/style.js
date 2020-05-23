@@ -73,3 +73,22 @@ $(function(){
     });
   });
 });
+
+$(function(){
+    let parallaxFix = $(".parallax__fix");
+        parallaxFixPosOT = parallaxFix.offset().top;
+        targetFactor = 0.5;
+        windowH = $(window).height();
+        parallaxFixStart = parallaxFixPosOT - windowH;
+
+  $(window).on('scroll',function(){
+    let scrollY = $(this).scrollTop();
+
+    if(scrollY > parallaxFixStart){
+      parallaxFix.css('background-position-y', (scrollY - parallaxFixPosOT) * targetFactor + 'px');
+
+    }else{
+      parallaxFix.css('background-position','center top');
+    }
+  });
+});
