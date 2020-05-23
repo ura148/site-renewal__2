@@ -118,10 +118,10 @@ img {
     font-size: 1.2rem; }
     .btn__trigger-header-txt--close {
       display: none; }
-  .btn:hover, .btn--big:hover {
+  .btn.hover:hover, .hover.btn--big:hover {
     transform: translateY(-4px);
     background-color: #fbfdff; }
-  .btn:hover > span, .btn--big:hover > span {
+  .btn.hover:hover > span, .hover.btn--big:hover > span {
     color: #04436d; }
   .btn--big {
     width: 258px;
@@ -345,6 +345,7 @@ img {
     left: 0;
     width: 100%;
     height: 100vh;
+    overflow-y: scroll;
     background-color: rgba(4, 67, 109, 0.7); }
   .nav--footer {
     flex-direction: column; }
