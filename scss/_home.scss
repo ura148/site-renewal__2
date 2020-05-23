@@ -81,7 +81,7 @@
     &::before{
       content: "";
       width: 100%;
-      height: 583px;
+      height: 100%;
       background-color: rgba(0,0,0,0.6);
       position: absolute;
       top: 0;
@@ -167,10 +167,6 @@
     &__2section-img{
       padding: 148px 0;
       width: 100vw;
-
-      &::before{
-        height: 512px;
-      }
     }
   }
 }
