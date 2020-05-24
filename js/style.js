@@ -27,7 +27,7 @@ let hoverToggle = function(){
   let ua = navigator.userAgent.toLowerCase();
       winW = $(window).width();
       devW = 1080;
-      hover = ".nav__item,.nav__subitem,.nav__sublink";
+      hover = ".nav__item,.nav__subitem,.nav__sublink,.btn,.btn--big";
 
   if (ua.indexOf('iphone') > 0 || ua.indexOf('ipad') > 0 || ua.indexOf('android') > 0 || ua.indexOf('ipod') > 0 || ua.indexOf('mobile') > 0 ) {
       $(hover).removeClass('hover');
