@@ -198,7 +198,7 @@ img {
   background-image: url(../img/temple.jpg);
   background-position: center top;
   background-repeat: no-repeat;
-  background-size: 140%; }
+  background-size: auto 130%; }
   .home__2section-img::before {
     content: "";
     width: 100%;
@@ -222,7 +222,9 @@ img {
     right: 2%;
     transform: translateY(-50%);
     width: 100%;
-    max-width: 500px; } }
+    max-width: 500px; }
+  .home__2section-img {
+    background-size: cover; } }
 @media screen and (max-width: 768px) {
   .home__backgroung-img {
     height: calc(100vh - 48px);

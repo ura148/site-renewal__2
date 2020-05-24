@@ -77,7 +77,7 @@
     background-image: url(../img/temple.jpg);
     background-position: center top;
     background-repeat: no-repeat;
-    background-size: 140%;
+    background-size: auto 130%;
 
     &::before{
       content: "";
@@ -113,6 +113,10 @@
       transform: translateY(-50%);
       width: 100%;
       max-width: 500px;
+    }
+
+    &__2section-img{
+      background-size: cover;
     }
   }
 }

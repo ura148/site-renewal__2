@@ -1,6 +1,7 @@
 let winH = $(window).height();
     winW = $(window).width();
     ua = navigator.userAgent.toLowerCase();
+    devW = 1080;
 
   $(window).on({
     "load":function(){
@@ -26,8 +27,8 @@ let winH = $(window).height();
 let hoverToggle = function(){
   let ua = navigator.userAgent.toLowerCase();
       winW = $(window).width();
-      devW = 1080;
       hover = ".nav__item,.nav__subitem,.nav__sublink,.btn,.btn--big";
+      hoverBtn = ".btn,.btn--big";
 
   if (ua.indexOf('iphone') > 0 || ua.indexOf('ipad') > 0 || ua.indexOf('android') > 0 || ua.indexOf('ipod') > 0 || ua.indexOf('mobile') > 0 ) {
       $(hover).removeClass('hover');
@@ -35,6 +36,7 @@ let hoverToggle = function(){
 
   } else if(winW < devW){
       $(hover).removeClass('hover');
+      $(hoverBtn).addClass('hover');
       $(".nav--header").css("display","none");
 
   } else{
@@ -64,6 +66,8 @@ let fadeIn = function(){
 let parallax = function(){
     if(ua.indexOf('iphone') > 0 || ua.indexOf('ipad') > 0 || ua.indexOf('android') > 0 || ua.indexOf('ipod') > 0 || ua.indexOf('mobile') > 0 ) {
       $(".home__2section-img").css("background-size","cover");
+    }else if(winW < devW){
+        $(".home__2section-img").css("background-position-y",0);
     }else{
       let scrollY = $(this).scrollTop();
           parallaxFix = $(".parallax__fix");
